@@ -75,7 +75,7 @@ public:
 		if (rotation) {
 			// change app (if required)
 			if (switching) {
-				currentApp = (currentApp + rotation) % apps.size();
+				currentApp = (apps.size() + currentApp + rotation) % apps.size();
 
 			} else {
 				// let current app handle rotation
