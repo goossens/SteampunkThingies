@@ -1,0 +1,35 @@
+{
+	"$schema": "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/schema/library.json",
+	"name": "JgsSprite",
+	"version": "1.0.0",
+	"description": "A helper library for graphical sprites",
+	"keywords": "graphics,sprites",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/goossens/SteamPunkThingies.git"
+	},
+	"authors": [
+		{
+			"name": "Johan Goossens",
+			"url": "https://goossens.github.io",
+			"maintainer": true
+		}
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/goossens/SteamPunkThingies",
+	"dependencies": [
+		{
+			"name": "TFT_eSPI",
+			"version": "https://github.com/Bodmer/TFT_eSPI"
+		},
+		{
+			"name": "JPEGDecoder",
+			"version": "https://github.com/Bodmer/JPEGDecoder"
+		}
+	],
+	"build": {
+		"libLDFMode": "deep+"
+	},
+	"frameworks": "*",
+	"platforms": "*"
+}

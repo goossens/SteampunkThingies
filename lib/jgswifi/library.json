@@ -1,0 +1,31 @@
+{
+	"$schema": "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/schema/library.json",
+	"name": "JgsWifi",
+	"version": "1.0.0",
+	"description": "A wrapper library for WifiManager and Wifi",
+	"keywords": "wifi",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/goossens/SteamPunkThingies.git"
+	},
+	"authors": [
+		{
+			"name": "Johan Goossens",
+			"url": "https://goossens.github.io",
+			"maintainer": true
+		}
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/goossens/SteamPunkThingies",
+	"dependencies": [
+		{
+			"name": "WifiManager",
+			"version": "https://github.com/tzapu/WiFiManager"
+		}
+	],
+	"build": {
+		"libLDFMode": "deep+"
+	},
+	"frameworks": "*",
+	"platforms": "*"
+}

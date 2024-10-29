@@ -1,0 +1,23 @@
+{
+	"name": "JgsWifi",
+	"version": "1.0.0",
+	"description": "A logging library",
+	"keywords": "logging,serial",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/goossens/SteamPunkThingies.git"
+	},
+	"authors": [
+		{
+			"name": "Johan Goossens",
+			"url": "https://goossens.github.io",
+			"maintainer": true
+		}
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/goossens/SteamPunkThingies",
+	"dependencies": {
+	},
+	"frameworks": "arduino",
+	"platforms": "espressif32"
+}

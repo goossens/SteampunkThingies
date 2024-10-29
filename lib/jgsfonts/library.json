@@ -1,0 +1,27 @@
+{
+	"$schema": "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/schema/library.json",
+	"name": "JgsFonts",
+	"version": "1.0.0",
+	"description": "A set of JoGo Studio specific fonts",
+	"keywords": "fonts",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/goossens/SteamPunkThingies.git"
+	},
+	"authors": [
+		{
+			"name": "Johan Goossens",
+			"url": "https://goossens.github.io",
+			"maintainer": true
+		}
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/goossens/SteamPunkThingies",
+	"dependencies": [
+	],
+	"build": {
+		"libLDFMode": "deep+"
+	},
+	"frameworks": "*",
+	"platforms": "*"
+}

@@ -1,0 +1,35 @@
+{
+	"$schema": "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/schema/library.json",
+	"name": "JgsTimeZone",
+	"version": "1.0.0",
+	"description": "A wrapper library to automatically determine timezone and DST offset based on IP address",
+	"keywords": "timezone,DST,geolocation",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/goossens/SteamPunkThingies.git"
+	},
+	"authors": [
+		{
+			"name": "Johan Goossens",
+			"url": "https://goossens.github.io",
+			"maintainer": true
+		}
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/goossens/SteamPunkThingies",
+	"dependencies": [
+		{
+			"name": "Arduino_JSON",
+			"version": "Arduino_JSON"
+		},
+		{
+			"name": "ezTime",
+			"version": "https://github.com/ropg/ezTime"
+		}
+	],
+	"build": {
+		"libLDFMode": "deep+"
+	},
+	"frameworks": "*",
+	"platforms": "*"
+}
