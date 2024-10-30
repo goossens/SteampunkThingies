@@ -26,8 +26,7 @@
 
 static constexpr const char* url = "https://ipapi.co/json/";
 
-// certificate downloaded with:
-// openssl s_client -showcerts -connect ipapi.co:443 </dev/null 2>/dev/null | openssl x509 -outform PEM >cert.pem
+// certificate downloaded with cirtificate.sh script
 static constexpr const char* certificate = \
 	"-----BEGIN CERTIFICATE-----\n" \
 	"MIIDejCCAmKgAwIBAgIQf+UwvzMTQ77dghYQST2KGzANBgkqhkiG9w0BAQsFADBX\n" \
@@ -59,7 +58,7 @@ static Timezone localTime;
 //
 
 void JgsTimeZone::init(bool forceReload, std::function<void(const char*, const char*)> status) {
-#ifdef ENABLE_LOGGING
+#if ENABLE_LOGGING
 	setDebug(INFO, Serial);
 #endif
 

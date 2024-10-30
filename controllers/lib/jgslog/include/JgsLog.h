@@ -26,7 +26,7 @@ class JgsLog {
 public:
 	// constructor
 	static void init() {
-#ifdef ENABLE_LOGGING
+#if ENABLE_LOGGING
 		Serial.begin(115200);
 		while (!Serial);
 #endif
@@ -34,7 +34,7 @@ public:
 
 	// print a line
 	static size_t print(const char* msg, ...) {
-#ifdef ENABLE_LOGGING
+#if ENABLE_LOGGING
 		va_list args;
 		va_start(args, msg);
 
@@ -52,7 +52,7 @@ public:
 
 	// show CPU/memory statistics
 	static void cpuMemStats() {
-#ifdef ENABLE_LOGGING
+#if ENABLE_LOGGING
 		print("\n");
 		print("Chip model: %s, %dMHZ, %d cores\n", ESP.getChipModel(), ESP.getCpuFreqMHz(), ESP.getChipCores());
 		print("Free heap: %d out of %d\n", ESP.getFreeHeap(), ESP.getHeapSize());
