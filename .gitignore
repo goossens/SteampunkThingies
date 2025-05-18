@@ -32,5 +32,6 @@
 *.app
 
 # PlatformIO files
+.vscode
 controllers/.pio
 controllers/.vscode
